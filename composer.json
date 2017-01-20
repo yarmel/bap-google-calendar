@@ -1,0 +1,37 @@
+{
+    "name": "yarmel/bap-google-calendar",
+    "description": "Manage events on a Google Calendar",
+    "keywords": [
+        "yarmel",
+        "calendar",
+        "google",
+        "event",
+        "schedule",
+        "bap-google-calendar"
+    ],
+    "homepage": "https://github.com/yarmel/bap-google-calendar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vasyl Mayovets",
+            "email": "vm@yarmel.com",
+            "role": "Founder"
+        },
+        {
+            "name": "Volodymyr Dmytrechko",
+            "email": "dvm@yarmel.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^5.0",
+        "google/apiclient": "^1.1.7"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Yarmel\\Bap\\GoogleCalendar\\": "src"
+        }
+    }
+}
