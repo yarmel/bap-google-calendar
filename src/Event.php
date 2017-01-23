@@ -187,12 +187,12 @@ class Event
     protected function getFieldName( $name)
     {
         $arr = [
-            'name'          => 'summary',
+            'title'          => 'summary',
             'description'   => 'description',
-            'startDate'     => 'start.date',
-            'endDate'       => 'end.date',
-            'startDateTime' => 'start.dateTime',
-            'endDateTime'   => 'end.dateTime',
+            'start_date'     => 'start.date',
+            'end_date'       => 'end.date',
+            'start_datetime' => 'start.dateTime',
+            'end_datetime'   => 'end.dateTime',
         ];
     
         return empty($arr[$name]) ? $name : $arr[$name];

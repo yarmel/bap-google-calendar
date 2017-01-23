@@ -33,7 +33,7 @@ class Calendar
      *
      * @return array
      */
-    public function listEvents($startDateTime = null, $endDateTime = null,array $queryParameters = [])
+    public function listEvents(DateTime $startDateTime = null,DateTime $endDateTime = null,array $queryParameters = [])
     {
         $parameters = ['singleEvents' => true];
 
