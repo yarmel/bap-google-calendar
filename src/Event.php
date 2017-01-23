@@ -130,7 +130,7 @@ class Event
 
     public function save($method = null)
     {
-        $method = $method ?? ($this->exists() ? 'updateEvent' : 'insertEvent');
+        $method = $method ? $method : ($this->exists() ? 'updateEvent' : 'insertEvent');
 
         $googleCalendar = $this->getGoogleCalendar($this->calendarId);
 
