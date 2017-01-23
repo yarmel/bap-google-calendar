@@ -10,7 +10,7 @@ class Factory
 {
     public static function createForCalendarId(DiInterface $di, $calendarId)
     {
-        $client_json = APP_ROOT.'.dev'.DS.$di->get('config')->get('services')['google_calendar']['client_json'];
+        $client_json = PUBLIC_DIR.'files'.DS.$di->get('config')->get('services')['google_calendar']['client_json'];
         $client = new Google_Client();
 
         $credentials = $client->loadServiceAccountJson(
